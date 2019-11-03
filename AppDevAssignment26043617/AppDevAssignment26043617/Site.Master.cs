@@ -74,6 +74,13 @@ namespace AppDevAssignment26043617
 
         }
 
+        public IQueryable<Units> GetUnits()
+        {
+            var _db = new AppDevAssignment26043617.Models.SiteContext();
+            IQueryable<Units> query = _db.Units;
+            return query;
+        }
+
         protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
         {
             Context.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);

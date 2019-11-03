@@ -20,5 +20,7 @@ namespace AppDevAssignment26043617.Models
         
         public byte[] UnitOutline { get; set; }
 
+        public virtual ICollection<Results> Results { get; set; }
+
     }
 }

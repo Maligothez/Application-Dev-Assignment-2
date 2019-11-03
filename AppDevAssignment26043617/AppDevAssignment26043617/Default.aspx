@@ -5,7 +5,7 @@
     <div class="jumbotron">
         <h1>Unit Score management Now!</h1>
         <p class="lead">Welcome to the score management website.</p>
-        <p></a></p>
+        <p></p>
     </div>
 
     <div class="row">

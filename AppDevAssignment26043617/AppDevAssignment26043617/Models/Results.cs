@@ -8,8 +8,11 @@ namespace AppDevAssignment26043617.Models
 {
     public class Results
     {
-        [Required, StringLength(8)]
-        public string UnitCode { get; set; }
+        [Required]
+        public int? UnitCode { get; set; }
+
+        [Required]
+        public virtual  Units Units { get; set; }
         
         [Required, Display(Name = "Student ID")]
         public int StudentID { get; set; }
